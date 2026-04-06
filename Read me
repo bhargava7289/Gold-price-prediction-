@@ -1,0 +1,95 @@
+# Gold Price Prediction
+
+A machine learning project to predict gold prices using historical data from Yahoo Finance.
+
+## Features
+
+- **Data Source**: Yahoo Finance (GC=F - Gold Futures)
+- **Time Period**: 10 years of historical data
+- **Visualizations**: Line charts and candlestick charts
+- **Technical Indicators**: SMA, EMA, MACD
+- **Libraries Used**: yfinance, pandas, numpy, matplotlib, seaborn, mplfinance
+
+## Project Structure
+
+- `gold_price_prediction.ipynb` - Main Jupyter notebook with complete analysis
+
+## Key Components
+
+1. **Data Fetching**: Retrieves 10 years of gold price data from Yahoo Finance
+2. **Data Processing**: Cleans and prepares data for analysis
+3. **Visualization**: Creates line plots and candlestick charts
+4. **Technical Analysis**: Calculates moving averages and MACD indicators
+5. **Feature Engineering**: Derives daily returns and technical indicators
+
+## Installation
+
+```bash
+pip install yfinance pandas numpy matplotlib seaborn mplfinance
+
+
+
+
+
+
+
+Usage
+Python
+# Run in Jupyter Notebook
+import yfinance as yf
+gold_data = yf.download('GC=F', start='2016-03-04', end='2026-03-04')
+Data Columns
+Date: Trading date
+Open: Opening price
+High: Highest price
+Low: Lowest price
+Close: Closing price
+Volume: Trading volume
+SMA_5: 5-day Simple Moving Average
+SMA_20: 20-day Simple Moving Average
+EMA_12: 12-day Exponential Moving Average
+EMA_26: 26-day Exponential Moving Average
+MACD: Moving Average Convergence Divergence
+Daily_Return: Daily percentage return
+Results
+Dataset Size: 2,513 trading days
+Price Range: $1,127.80 - $5,318.40
+No Missing Values: Complete dataset with no gaps
+Visualizations
+Line chart of gold prices over time
+Candlestick chart showing OHLC data
+Technical indicators overlaid on price charts
+Future Enhancements
+Time series forecasting models (ARIMA, Prophet)
+Machine learning models (Random Forest, Gradient Boosting)
+Backtesting trading strategies
+Real-time price predictions
+Author
+Bhargava
+
+License
+MIT License
+
+Code
+
+4. Click **Commit new file**
+
+## Step 4: (Optional) Create a Requirements.txt File
+
+1. Click **Add file** → **Create new file**
+2. Name it `requirements.txt`
+3. Add:
+
+yfinance==0.2.32 pandas==2.0.0 numpy==1.24.0 matplotlib==3.7.0 seaborn==0.12.0 mplfinance==0.12.10b0
+
+Code
+
+4. Click **Commit new file**
+
+Your gold price prediction project is now set up! You can now:
+- Push additional code files
+- Create new branches for experiments
+- Add documentation
+- Track your progress
+
+Would you like help with adding more files, creating branches, or setting up GitHub Actions for automation?
